@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background-color: white;
+  font-family: poppins;
+  font-size: 14px;
+}
+
+.container{
+  max-width: 350px;
+  width: 100%;
+  height: 375px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.container .top-container,
+.container .signup{
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 40px 40px 20px;
+}
+
+.container .top-container .logo{
+  width: 80%;
+  display: block;
+  margin: 0 auto 35px;  
+}
+
+input[type='username'], input[type='password'], input[type="submit"]{
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+}
+
+input[type='username'], input[type='username'] { 
+  background-color: #FAFAFA;
+}
+
+input[type='username'], input[type='username'] :focus { 
+  border: 1px solid #b2b2b2;
+}
+
+input[type='submit']{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #B2DFFB;
+  color: white;
+  font-size: 20px;
+  font-weight: bold ;
+  display: block;
+}
+
+.container .top-container .or {
+  display: flex;
+  height: 15px;
+  margin : 15px 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .top-container .or .line{
+  width: 105px;
+  height: 2px;
+  background-color: lightgray;
+}
+
+.container .top-container .or p{
+  color: gray;
+  font-size: 12px;
+}
+
+.container .top-container .diff .fb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .top-container .diff .fb p{
+  color: #385185;
+  font-weight: bold;
+  margin-left:  5px;
+}
+
+.container .top-container .diff .forgot {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container .top-container .diff a {
+  color: #3897f0;
+}
+
+.container .top-container .hp img {
+  right: 500px;
+}
+.container .apps { 
+  text-align: center;
+  color: #262626;
+}
+
+.container .apps p {
+  margin-bottom:  20px;
+}
+
+.container .apps a img {
+  width: 135px;
+  height: 40px;
+  margin: 0 5px;
+}
+
+@media screen and (min-width: 350px){
+  .last{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .last{
+    position: absolute;
+    display: inline-block;
+    width: 350px;
+    height: 460px;
+    right: 335px;
+    top:0;
+  }
+  .container{
+    margin-left: 800px;
+  }
+
+  .apps{
+    text-align: center;
+  }
+}
